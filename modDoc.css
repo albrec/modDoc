@@ -129,7 +129,8 @@ a:hover {
 		font-size: 14pt;
 	}
 
-    body > header {
+    body > header,
+    body > footer {
         display: none;
         background: none;
         box-shadow: none;
@@ -142,6 +143,12 @@ a:hover {
     .layout {
         page-break-inside: avoid;
         border: none;
+    }
+
+    .layout > .diagram {
+        float: right;
+        margin-left: 30pt;
+        margin-right: 0;
     }
     
 }
