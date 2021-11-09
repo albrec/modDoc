@@ -8,7 +8,8 @@ body {
 
 body > header,
 body > footer,
-body > section {
+body > section,
+body > nav {
     box-sizing: border-box;
     width: 100%;
     padding: 20pt 20pt 25pt;
