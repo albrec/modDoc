@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="110 35.28 260.486 371.212" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="217.244" y="114.785" width="9.59" height="9.935"/>
+    <linearGradient id="color-0" bx:pinned="true">
+      <stop style="stop-color: #222831;"/>
+    </linearGradient>
+    <linearGradient id="color-1" bx:pinned="true">
+      <stop style="stop-color: rgb(186, 179, 172);"/>
+    </linearGradient>
+    <linearGradient id="color-3" bx:pinned="true">
+      <stop style="stop-color: rgb(211, 211, 211);"/>
+    </linearGradient>
+    <bx:guide x="160.991" y="32.31" angle="0"/>
+    <linearGradient id="gradient-2" bx:pinned="true">
+      <stop style="stop-color: rgb(59, 222, 0);" offset="0.5"/>
+      <stop style="stop-color: rgb(235, 0, 0);" offset="0.5"/>
+    </linearGradient>
+    <linearGradient id="gradient-1" bx:pinned="true">
+      <stop offset="0.299" style="stop-color: rgba(212, 162, 83, 0);"/>
+      <stop offset="0.337" style="stop-color: rgb(212, 162, 83);"/>
+    </linearGradient>
+    <linearGradient id="color-4" bx:pinned="true">
+      <title>Gold Marking</title>
+      <stop style="stop-color: rgb(210, 151, 63);"/>
+    </linearGradient>
+    <filter id="drop-shadow-filter-0" x="-500%" y="-500%" width="1000%" height="1000%" bx:pinned="true">
+      <title>Amber Glow</title>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="gaussian-blur-0"/>
+      <feOffset dx="0" dy="0" in="gaussian-blur-0" result="offset-0"/>
+      <feComponentTransfer result="offsetblur" in="offset-0">
+        <feFuncA id="spread-ctrl" type="linear" slope="4"/>
+      </feComponentTransfer>
+      <feFlood flood-color="rgba(255,187,0,1)" result="flood-0"/>
+      <feComposite in2="offsetblur" operator="in" in="flood-0" result="composite-0"/>
+      <feMerge result="merge-0">
+        <feMergeNode in="composite-0"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g>
+    <title>Small Button</title>
+    <circle style="fill: url(#color-0);" cx="160.795" cy="85.888" r="8.855"/>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="140.569" y="78.504"><title>Label</title>DISP</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 159.582184, 0)">
+    <title>Small Button</title>
+    <circle style="fill: url(#color-0);" cx="160.795" cy="85.888" r="8.855"/>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="183.415" y="78.504"><title>Label</title>WRITE</text>
+  </g>
+  <g style="filter: none;">
+    <title>LEDs</title>
+    <circle style="paint-order: fill; stroke: url(#color-0); stroke-opacity: 0.2; fill-opacity: 0.2; fill: url(#color-1); filter: none;" cx="196.051" cy="85.622" r="6.284" class="led-1"/>
+    <circle style="paint-order: fill; stroke: url(#color-0); stroke-opacity: 0.2; fill-opacity: 0.2; fill: url(#color-1); filter: url(#drop-shadow-filter-0);" cx="225.939" cy="85.622" r="6.284"/>
+    <circle style="paint-order: fill; stroke: url(#color-0); stroke-opacity: 0.2; fill-opacity: 0.2; fill: url(#color-1);" cx="255.605" cy="85.622" r="6.284"/>
+    <circle style="paint-order: fill; stroke: url(#color-0); stroke-opacity: 0.2; fill-opacity: 0.2; fill: url(#color-1);" cx="285.446" cy="85.622" r="6.284"/>
+  </g>
+  <g>
+    <title>Small Knob</title>
+    <circle style="fill: url(#color-0);" cx="160.654" cy="310.78" r="15.23">
+      <title>Knob</title>
+    </circle>
+    <circle style="fill: rgb(216, 216, 216);" cx="160.548" cy="300.862" r="3.435">
+      <title>Dot</title>
+    </circle>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="160.653" y="336.662"><title>Label</title>WET</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, -10)">
+    <title>Freeze Button</title>
+    <circle style="fill: rgb(216, 216, 216);" cx="291.839" cy="377.839" r="15.126"/>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="291.837" y="404.017"><title>Label</title>FREEZE</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, -10)">
+    <title>Trig Input</title>
+    <circle style="fill: url(#color-0); stroke: url(#color-1); paint-order: stroke; stroke-width: 10px; filter: none;" cx="184.016" cy="374.898" r="8.132">
+      <title>Jack</title>
+    </circle>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="184.017" y="404.017"><title>Label</title>SYNC</text>
+    <text style="fill: rgb(51, 51, 51); font-family: Arial; font-size: 18px; font-weight: 900; text-anchor: middle; white-space: pre;" x="240.245" y="77.677">Pitch/Time Shifter</text>
+  </g>
+  <g>
+    <title>Faders</title>
+    <line style="paint-order: fill; stroke-width: 2px; fill: none; stroke: rgb(210, 151, 63);" x1="220.796" y1="188.962" x2="338.092" y2="188.962"/>
+    <g transform="matrix(1, 0, 0, 1, -115.080002, -0.000004)">
+      <title>Fader</title>
+      <rect style="fill: url(#color-0);" x="332.324" y="114.785" width="9.59" height="149.025" rx="1.385" ry="1.385">
+        <title>Slot</title>
+      </rect>
+      <rect x="332.324" y="142.374" width="9.59" height="22.258" style="paint-order: fill; fill-rule: nonzero; fill: url(#color-3); filter: none; stroke: url(#color-1);" rx="1.375" ry="1.375">
+        <title>Cap</title>
+      </rect>
+      <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="336.556" y="274.493"><title>Label</title>POS</text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 38.551502, 0.000004)">
+      <title>Faders</title>
+      <g transform="matrix(1, 0, 0, 1, -115.080002, -0.000004)">
+        <title>Fader</title>
+        <rect style="fill: url(#color-0);" x="332.324" y="114.785" width="9.59" height="149.025" rx="1.385" ry="1.385">
+          <title>Slot</title>
+        </rect>
+        <rect x="332.324" y="142.374" width="9.59" height="22.258" style="paint-order: fill; fill-rule: nonzero; fill: url(#color-3); filter: none; stroke: url(#color-1);" rx="1.375" ry="1.375">
+          <title>Cap</title>
+        </rect>
+        <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="336.556" y="274.493"><title>Label</title>DIFF</text>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 76.657127, 0.000004)">
+      <title>Faders</title>
+      <g transform="matrix(1, 0, 0, 1, -115.080002, -0.000004)">
+        <title>Fader</title>
+        <rect style="fill: url(#color-0);" x="332.324" y="114.785" width="9.59" height="149.025" rx="1.385" ry="1.385">
+          <title>Slot</title>
+        </rect>
+        <rect x="332.324" y="142.374" width="9.59" height="22.258" style="paint-order: fill; fill-rule: nonzero; fill: url(#color-3); filter: none; stroke: url(#color-1);" rx="1.375" ry="1.375">
+          <title>Cap</title>
+        </rect>
+        <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="336.556" y="274.493">SIZE</text>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 115.017128, 0.000004)">
+      <title>Faders</title>
+      <g transform="matrix(1, 0, 0, 1, -115.080002, -0.000004)">
+        <title>Fader</title>
+        <rect style="fill: url(#color-0);" x="332.324" y="114.785" width="9.59" height="149.025" rx="1.385" ry="1.385">
+          <title>Slot</title>
+        </rect>
+        <rect x="332.324" y="142.374" width="9.59" height="22.258" style="paint-order: fill; fill-rule: nonzero; fill: url(#color-3); filter: none; stroke: url(#color-1);" rx="1.375" ry="1.375">
+          <title>Cap</title>
+        </rect>
+        <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="336.556" y="274.493"><title>Label</title>LP/HP</text>
+      </g>
+    </g>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -2.908915, -7.093948)">
+    <title>Big Knob</title>
+    <path style="filter: none; fill-rule: nonzero; fill: url(#color-4);" d="M 162.517 114.775 L 166.137 114.775 L 166.122 132.076 C 166.722 132.139 167.318 132.233 167.907 132.359 L 173.241 115.9 L 176.684 117.019 L 171.323 133.469 C 171.874 133.714 172.412 133.988 172.934 134.29 L 183.092 120.285 L 186.021 122.413 L 175.839 136.401 C 176.288 136.804 176.714 137.231 177.118 137.679 L 191.107 127.499 L 193.234 130.428 L 179.229 140.585 C 179.53 141.107 179.804 141.645 180.049 142.196 L 196.499 136.837 L 197.618 140.28 L 181.159 145.612 C 181.284 146.201 181.379 146.797 181.442 147.397 L 198.743 147.384 L 198.743 151.004 L 181.441 150.989 C 181.378 151.588 181.284 152.184 181.159 152.774 L 197.617 158.108 L 196.498 161.551 L 180.049 156.19 C 179.803 156.741 179.529 157.278 179.228 157.801 L 193.233 167.959 L 191.105 170.888 L 177.116 160.706 C 176.713 161.154 176.286 161.581 175.838 161.984 L 186.018 175.973 L 183.09 178.101 L 172.932 164.095 C 172.622 164.274 172.307 164.444 171.987 164.603 L 171.95 164.513 L 157.1 164.647 L 157.044 164.786 C 156.592 164.575 156.149 164.344 155.717 164.094 L 145.558 178.099 L 142.63 175.971 L 152.811 161.983 C 152.363 161.58 151.936 161.153 151.533 160.705 L 137.544 170.885 L 135.416 167.956 L 149.422 157.799 C 149.12 157.277 148.847 156.739 148.601 156.188 L 132.151 161.547 L 131.033 158.104 L 147.492 152.772 C 147.366 152.183 147.272 151.587 147.209 150.987 L 129.908 151 L 129.908 147.38 L 147.209 147.395 C 147.272 146.796 147.367 146.2 147.492 145.61 L 131.034 140.276 L 132.152 136.833 L 148.602 142.194 C 148.847 141.643 149.121 141.106 149.423 140.583 L 135.418 130.425 L 137.546 127.496 L 151.534 137.678 C 151.938 137.23 152.364 136.803 152.812 136.4 L 142.632 122.411 L 145.561 120.283 L 155.718 134.289 C 156.24 133.987 156.778 133.713 157.329 133.468 L 151.97 117.018 L 155.413 115.899 L 160.745 132.358 C 161.335 132.233 161.931 132.139 162.53 132.076 Z M 164.326 141.363 C 158.299 141.363 154.532 147.887 157.545 153.106 C 158.944 155.528 161.528 157.021 164.325 157.021 C 170.352 157.021 174.118 150.497 171.105 145.278 C 169.707 142.856 167.123 141.363 164.326 141.363 Z">
+      <title>Legend</title>
+    </path>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="164.373" y="185.807"><title>Label</title>PITCH</text>
+    <g style="">
+      <title>Knob</title>
+      <path style="fill: url(#color-0);" transform="matrix(0.453679, 0.00001, -0.00001, 0.453679, -147.792023, 2.007998)" d="M 681.151 270.468 L 694.225 270.468 L 700.714 277.13 A 48.631 48.631 0 0 1 711.608 281.643 L 720.907 281.52 L 730.152 290.765 L 730.029 300.064 A 48.631 48.631 0 0 1 734.542 310.958 L 741.204 317.447 L 741.204 330.521 L 734.542 337.01 A 48.631 48.631 0 0 1 730.029 347.904 L 730.152 357.203 L 720.907 366.448 L 711.608 366.325 A 48.631 48.631 0 0 1 700.714 370.838 L 694.225 377.5 L 681.151 377.5 L 674.662 370.838 A 48.631 48.631 0 0 1 663.768 366.325 L 654.469 366.448 L 645.224 357.203 L 645.347 347.904 A 48.631 48.631 0 0 1 640.834 337.01 L 634.172 330.521 L 634.172 317.447 L 640.834 310.958 A 48.631 48.631 0 0 1 645.347 300.064 L 645.224 290.765 L 654.469 281.52 L 663.768 281.643 A 48.631 48.631 0 0 1 674.662 277.13 Z M 687.688 323.984 A 0 0 0 0 0 687.688 323.984 A 0 0 0 0 0 687.688 323.984" bx:shape="cog 687.688 323.984 0 48.631 53.516 0.381 8 1@fe73d968"/>
+      <rect x="162.848" y="124.696" width="2.94" height="15.081" style="fill: rgb(216, 216, 216);"/>
+    </g>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, -2.908915, 70.94931)">
+    <title>Big Knob</title>
+    <path style="filter: none; fill: url(#color-4);" d="M 162.517 114.775 L 166.137 114.775 L 166.122 132.076 C 166.722 132.139 167.318 132.233 167.907 132.359 L 173.241 115.9 L 176.684 117.019 L 171.323 133.469 C 171.874 133.714 172.412 133.988 172.934 134.29 L 183.092 120.285 L 186.021 122.413 L 175.839 136.401 C 176.288 136.804 176.714 137.231 177.118 137.679 L 191.107 127.499 L 193.234 130.428 L 179.229 140.585 C 179.53 141.107 179.804 141.645 180.049 142.196 L 196.499 136.837 L 197.618 140.28 L 181.159 145.612 C 181.284 146.201 181.379 146.797 181.442 147.397 L 198.743 147.384 L 198.743 151.004 L 181.441 150.989 C 181.378 151.588 181.284 152.184 181.159 152.774 L 197.617 158.108 L 196.498 161.551 L 180.049 156.19 C 179.803 156.741 179.529 157.278 179.228 157.801 L 193.233 167.959 L 191.105 170.888 L 177.116 160.706 C 176.713 161.154 176.286 161.581 175.838 161.984 L 186.018 175.973 L 183.09 178.101 L 172.932 164.095 C 172.622 164.274 172.307 164.444 171.987 164.603 L 171.95 164.513 L 157.1 164.647 L 157.044 164.786 C 156.592 164.575 156.149 164.344 155.717 164.094 L 145.558 178.099 L 142.63 175.971 L 152.811 161.983 C 152.363 161.58 151.936 161.153 151.533 160.705 L 137.544 170.885 L 135.416 167.956 L 149.422 157.799 C 149.12 157.277 148.847 156.739 148.601 156.188 L 132.151 161.547 L 131.033 158.104 L 147.492 152.772 C 147.366 152.183 147.272 151.587 147.209 150.987 L 129.908 151 L 129.908 147.38 L 147.209 147.395 C 147.272 146.796 147.367 146.2 147.492 145.61 L 131.034 140.276 L 132.152 136.833 L 148.602 142.194 C 148.847 141.643 149.121 141.106 149.423 140.583 L 135.418 130.425 L 137.546 127.496 L 151.534 137.678 C 151.938 137.23 152.364 136.803 152.812 136.4 L 142.632 122.411 L 145.561 120.283 L 155.718 134.289 C 156.24 133.987 156.778 133.713 157.329 133.468 L 151.97 117.018 L 155.413 115.899 L 160.745 132.358 C 161.335 132.233 161.931 132.139 162.53 132.076 Z M 164.326 141.363 C 158.299 141.363 154.532 147.887 157.545 153.106 C 158.944 155.528 161.528 157.021 164.325 157.021 C 170.352 157.021 174.118 150.497 171.105 145.278 C 169.707 142.856 167.123 141.363 164.326 141.363 Z">
+      <title>Legend</title>
+    </path>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="164.373" y="185.807"><title>Label</title>IN GAIN</text>
+    <g style="">
+      <title>Knob</title>
+      <path style="fill: url(#color-0);" transform="matrix(0.453679, 0.00001, -0.00001, 0.453679, -147.792023, 2.007998)" d="M 681.151 270.468 L 694.225 270.468 L 700.714 277.13 A 48.631 48.631 0 0 1 711.608 281.643 L 720.907 281.52 L 730.152 290.765 L 730.029 300.064 A 48.631 48.631 0 0 1 734.542 310.958 L 741.204 317.447 L 741.204 330.521 L 734.542 337.01 A 48.631 48.631 0 0 1 730.029 347.904 L 730.152 357.203 L 720.907 366.448 L 711.608 366.325 A 48.631 48.631 0 0 1 700.714 370.838 L 694.225 377.5 L 681.151 377.5 L 674.662 370.838 A 48.631 48.631 0 0 1 663.768 366.325 L 654.469 366.448 L 645.224 357.203 L 645.347 347.904 A 48.631 48.631 0 0 1 640.834 337.01 L 634.172 330.521 L 634.172 317.447 L 640.834 310.958 A 48.631 48.631 0 0 1 645.347 300.064 L 645.224 290.765 L 654.469 281.52 L 663.768 281.643 A 48.631 48.631 0 0 1 674.662 277.13 Z M 687.688 323.984 A 0 0 0 0 0 687.688 323.984 A 0 0 0 0 0 687.688 323.984" bx:shape="cog 687.688 323.984 0 48.631 53.516 0.381 8 1@fe73d968"/>
+      <rect x="162.848" y="124.696" width="2.94" height="15.081" style="fill: rgb(216, 216, 216);"/>
+    </g>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 54.27689, 0)">
+    <title>Small Knob</title>
+    <circle style="fill: url(#color-0);" cx="160.654" cy="310.78" r="15.23">
+      <title>Knob</title>
+    </circle>
+    <circle style="fill: rgb(216, 216, 216);" cx="160.548" cy="300.862" r="3.435">
+      <title>Dot</title>
+    </circle>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="160.653" y="336.662"><title>Label</title>PAN</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 108.55378, 0)">
+    <title>Small Knob</title>
+    <circle style="fill: url(#color-0);" cx="160.654" cy="310.78" r="15.23">
+      <title>Knob</title>
+    </circle>
+    <circle style="fill: rgb(216, 216, 216);" cx="160.548" cy="300.862" r="3.435">
+      <title>Dot</title>
+    </circle>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="160.653" y="336.662"><title>Label</title>FBK</text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 162.830673, 0)">
+    <title>Small Knob</title>
+    <circle style="fill: url(#color-0);" cx="160.654" cy="310.78" r="15.23">
+      <title>Knob</title>
+    </circle>
+    <circle style="fill: rgb(216, 216, 216);" cx="160.548" cy="300.862" r="3.435">
+      <title>Dot</title>
+    </circle>
+    <text style="fill: url(#color-0); font-family: Arial; font-size: 10px; font-weight: 700; text-anchor: middle; white-space: pre;" x="160.653" y="336.662">RVB</text>
+  </g>
+</svg>

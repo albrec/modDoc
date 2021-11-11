@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* Layout */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body > header h1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+body > header h1 a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+body > header img {
+    height: 4rem;
+    margin-right: 1rem;
+}
+
+body > header,
+body > footer,
+body > section,
+body > nav {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20pt 20pt 25pt;
+}
+
+body > header {
+    background: rgba(20,10,0, 0.15);
+    box-shadow: 0 0 10pt rgba(20,10,0, .5);
+}
+
+.layout {
+    box-sizing: border-box;
+    border-color: rgba(20,10,0, 0.15);
+    border-width: 0 0 1pt;
+    border-style: solid;
+    border-image: linear-gradient(to left, rgba(0,0,0,0), black, black, rgba(0,0,0,0)) 1;
+    padding-bottom: 40pt;
+    overflow: auto;
+}
+
+.layout > .diagram {
+    background: white;
+    float: left;
+    width: 40%;
+    border: 1pt solid rgba(20,10,0, 0.15);
+    box-shadow: 0 0 20pt rgba(20,10,0, 0.15);
+    margin-bottom: 30pt;
+    margin-right: 30pt;
+}
+
+.layout:nth-child(even) > .diagram {
+    float: right;
+    margin-left: 30pt;
+    margin-right: 0;
+}
+
+h4 {
+    margin: 0;
+}
+
+h4 + ul {
+    margin-top: 5pt;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;;
+    }
+    
+    .layout {
+        width: 50%;
+    }
+
+    .layout > .diagram {
+        float: right;
+        margin-left: 30pt;
+        margin-right: 0;
+    }
+    
+    .layout:nth-child(even) > .diagram {
+        float: left;
+        margin-right: 30pt;
+        margin-left: 0;
+    }
+
+    .module-list {
+        width: 30%;
+    }
+
+    .intro {
+        width: 70%;
+    }
+}
+
+
+
+/* Typography */
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12pt;
+}
+
+body > header a,
+body > header a:active,
+body > header a:visited,
+body > header a:hover {
+    color: inherit;
+}
+
+body > footer {
+    text-align: center;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+    color: rgb(194, 30, 8);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.module-list ul {
+    font-size: 1.5em;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+@media print {
+	body {
+		font-size: 14pt;
+	}
+
+    body > header,
+    body > footer {
+        display: none;
+        background: none;
+        box-shadow: none;
+        border-color: rgba(20,10,0, 0.25);
+        border-width: 0 0 1pt;
+        border-style: solid;
+        border-image: linear-gradient(to left, rgba(0,0,0,0), black, black, rgba(0,0,0,0)) 1;
+    }
+
+    .layout {
+        page-break-inside: avoid;
+        border: none;
+    }
+
+    .layout > .diagram {
+        float: right;
+        margin-left: 30pt;
+        margin-right: 0;
+    }
+    
+}
