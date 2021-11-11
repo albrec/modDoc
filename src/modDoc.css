@@ -1,7 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 /* Layout */
+
+:root {
+    --color-light: hsl(50, 5%, 92%);
+    --color-mid: hsl(50, 10%, 85%);
+    --color-dark: hsl(50, 25%, 50%);
+
+    --font-color-light: hsl(50, 0%, 76%);
+    --font-color-mid: hsl(50, 0%, 34%);
+    --font-color-dark: hsl(50, 0%, 27%);
+    
+    --link-color-light: hsl(0, 50%, 50%);
+    --link-color-mid: hsl(0, 50%, 30%);
+    --link-color-dark: hsl(0, 50%, 15%);
+
+    --shadow-color: hsla(50, 0%, 0%, 0.15);
+}
+
 body {
+    background-color: var(--color-light);
+    margin: 0 auto;
+    padding: 0;
+}
+
+body > header,
+body > footer,
+body > section,
+body > nav {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 1rem 1.5rem;
+}
+
+body > header {
+    background-color: var(--color-mid);
+    border-bottom: 1px solid var(--color-dark);
+    box-shadow: 0 0 3px 3px var(--shadow-color);
+}
+
+body > header h1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+body > header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > header img {
+    width: 3em;
+}
+
+body > section {
+    border-bottom: 1px solid var(--color-dark);
+    border-image: linear-gradient(to left, rgba(0,0,0,0), var(--color-dark), var(--color-dark), rgba(0,0,0,0)) 1;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+
+/* Typography */
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: var(--font-color-dark);
+}
+
+body > header h1,
+body > header h1 a,
+body > header h1 a:hover {
+    color: var(--font-color-dark);
+    font-weight: 300;
+}
+
+a {
+    color: var(--link-color-mid);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-color-light);
+    text-decoration: underline;
+}
+
+nav a {
+    font-weight: 700;
+}
+
+
+/* body {
     margin: 0;
     padding: 0;
 }
@@ -103,7 +198,6 @@ h4 + ul {
 
 
 
-/* Typography */
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 12pt;
@@ -168,4 +262,4 @@ a:hover {
         margin-right: 0;
     }
     
-}
+} */
