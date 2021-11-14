@@ -1,42 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5JDXH76T5F"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+---
+layout: base
+desc: The Eurorack manuals you always wished existed
+---
 
-gtag('config', 'G-5JDXH76T5F');
-</script>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>modDoc </title>
-    <meta name="description" content="The Eurorack manuals you always wished existed">
-
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../modDoc.css">
-    
-</head>
-<body class="monsoon">
-    <header>
-        <a class="logo" href="/"><em>&lt;</em>modDoc<em>&gt;</em></a> 
-        <div>
-            <h1></h1>
-            <p>The Eurorack manuals you always wished existed</p>
-        </div>
-    </header>
-    
-
-    
-<nav class="library">
-    <h2>Library</h2>
-    <ul><li><a href="/monsoon/">Monsoon</a>: Cloud Clone</li>
-<li><a href="/smr/">Spectral Multiband Resonator</a>: Multiband resonator and filter bank by 4MS Company</li></ul>
-</nav>
+{% include "nav.njk" %}
 
 <section>
     <div>
@@ -60,10 +27,3 @@ gtag('config', 'G-5JDXH76T5F');
         <p>Well, creating content, as the kids say these days. I've got a few modules on the docket currently, and once those are done, who knows. </p>
     </div>
 </section>
-
-
-    <footer>
-        David Souza | <a href="https://github.com/albrec/modDoc">Github</a>
-    </footer>
-</body>
-</html>

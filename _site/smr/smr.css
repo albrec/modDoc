@@ -1,52 +1,96 @@
+h3 em {
+    color: var(--font-color-mid);
+}
+
+small {
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.scales section {
+    margin: 4rem 0;
+    border: 0;
+    border-bottom: 1px solid;
+    border-image: var(--border-grad);
+}
+
+.scales section:last-of-type {
+    border: 0;
+}
+
 .scale-group {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
     list-style: none;
 
-    font-size: .8rem;
+    font-size: .9rem;
+    counter-reset: scaleCounter;
 }
 
 .scale-group > li {
-    width: 15%;
-    min-width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 6);
+    max-width: 12rem;
+    min-width: 9.5rem;
+
+    counter-increment: scaleCounter;
 }
 
 .scale-group > li > h4,
 .scale-group > li > p {
-    height: 1em;
+    min-height: 1em;
     margin: 0 0 .25em;
 
     text-align: center;
-    white-space: nowrap;
 }
 
 .scale-group > li > p {
     margin-bottom: 1em;
+
+    color: var(--font-color-mid);
     font-size: .9em;
     font-style: italic;
 }
 
 .scale-group ol {
     margin-bottom: 2rem;
+    padding: 0;
 }
 
 .scale-group ol > li {
-    margin-bottom: .75em;
+    margin: 0 0 .75em;
+    font-weight: 700;
+}
 
-    font-size: .9em;
-    white-space: nowrap;
+.scale-group ol > li::marker {
+    color: var(--font-color-light);
 }
 
 .scale-group .color {
-    width: 1.5rem;
-    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
     border: 1px solid;
     border-radius: 2rem;
     margin: 0 auto 1em;
 }
 
+.scale-group .color:after {
+    content: counter(scaleCounter);
+    color: white;
+    opacity: 0.5;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.75), -1px 0px 2px rgba(0,0,0,0.75);
+}
+
 @media only screen and ( max-width: 600px) {
+    .scale-group > li {
+        min-width: 50%;
+    }
 
 }
