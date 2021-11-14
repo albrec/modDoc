@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* Layout */
+
+:root {
+    --color-light: hsl(50, 5%, 92%);
+    --color-mid: hsl(50, 10%, 85%);
+    --color-dark: hsl(50, 25%, 50%);
+
+    --font-color-light: hsl(50, 0%, 70%);
+    --font-color-mid: hsl(0, 0%, 50%);
+    --font-color-dark: hsl(50, 0%, 30%);
+    
+    --link-color-light: hsl(0, 50%, 50%);
+    --link-color-mid: hsl(0, 50%, 30%);
+    --link-color-dark: hsl(0, 50%, 15%);
+
+    --shadow-color: hsla(50, 0%, 0%, 0.15);
+    --border-grad: linear-gradient(to left, rgba(0,0,0,0), var(--color-dark), var(--color-dark), rgba(0,0,0,0)) 1;
+}
+
+body {
+    background-color: var(--color-light);
+    margin: 0 auto;
+    padding: 0;
+}
+
+body > header,
+body > footer,
+body > article,
+body > section,
+body > nav {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem;
+}
+
+body > header {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-mid);
+    border-bottom: 1px solid var(--color-dark);
+    box-shadow: 0 0 3px 3px var(--shadow-color);
+}
+
+body > header > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body > header .logo {
+    display: block;
+    align-items: center;
+    margin-right: 2rem;
+    white-space: nowrap;
+}
+
+body > header .logo em {
+    color: var(--font-color-mid);
+    font-style: normal;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.25), -1px 0px 3px rgba(0,0,0,0.15);
+}
+
+body > header img {
+    width: 3em;
+}
+
+body > article,
+body > section {
+    border-bottom: 1px solid var(--color-dark);
+    border-image: linear-gradient(to left, rgba(0,0,0,0), var(--color-dark), var(--color-dark), rgba(0,0,0,0)) 1;
+}
+
+body > nav.library {
+    width: 50%;
+    float: right;
+    margin-left: 3rem;
+}
+
+body > nav.library ul {
+    list-style: none;
+    padding: 0;
+}
+
+body > nav.library li {
+    padding: .25em 0;
+
+    font-size: 1.25em;
+}
+
+body > footer {
+    background-color: var(--color-mid);
+    border-top: 1px solid var(--color-dark);
+    padding: .5em 2rem .5rem;
+}
+
+
+
+/* Typography */
+
+:root {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: var(--font-color-dark);
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em {
+    font-weight: normal;
+}
+
+
+
+a {
+    color: var(--link-color-mid);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-color-light);
+    text-decoration: underline;
+}
+
+code {
+    font-family: 'Aldrich', 'Courier New', Courier, monospace;
+}
+
+body > header {
+    font-size: 1.5rem;
+}
+
+body > header .logo,
+body > header .logo a,
+body > header .logo a:hover {
+    color: var(--font-color-dark);
+    font-family: 'Aldrich', 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+
+body > header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+body > header p {
+    color: var(--font-color-mid);
+    font-size: .8rem;
+    font-style: italic;
+    margin: 0;
+}
+
+nav a {
+    font-weight: 700;
+}

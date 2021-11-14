@@ -1,0 +1,4 @@
+<nav class="library">
+    <h2>Library</h2>
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({ showExcerpt: true }) | safe }}
+</nav>
