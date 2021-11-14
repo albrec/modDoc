@@ -27,6 +27,6 @@ The approach to the documentation is pretty straight forward if you've ever done
 ## Standards and expectations
 I like semantic web standards. While that's becoming more and more unusual these days, the simplity, clarity and maintainability of semantically clear HTML, you know... the actual document, is still something I appreciate and strive for.
 
-Thus... please understand that I will be only accepting contributions that follow the semantic standards and premise set forth in this code base. If you don't like that, you're more than welcome to fork the repo and build whatever you want, however you want. But if you are intending to submit something to be merged into the canonical repo and show up on modDoc.net, then please spend the time to look at the existing pages and follow the patterns.
+Thus... please understand that I will be only accepting contributions that follow the semantic standards and premise set forth in this code base. If you don't like that, you're more than welcome to fork the repo and build whatever you want, however you want. But if you are intending to submit something to be merged into the canonical repo and show up on [modDoc.net](moddoc.net), then please spend the time to look at the existing pages and follow the patterns.
 
 CSS is your friend.... 🙂
