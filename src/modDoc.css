@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 /* Layout */
 
@@ -26,6 +26,7 @@ body {
 
 body > header,
 body > footer,
+body > article,
 body > section,
 body > nav {
     box-sizing: border-box;
@@ -34,26 +35,29 @@ body > nav {
 }
 
 body > header {
+    display: flex;
+    align-items: center;
     background-color: var(--color-mid);
     border-bottom: 1px solid var(--color-dark);
     box-shadow: 0 0 3px 3px var(--shadow-color);
 }
 
-body > header h1 {
-    display: flex;
-    align-items: flex-end;
-}
-
-body > header a {
+body > header > * {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+body > header .logo {
     align-items: center;
+    margin-right: 2rem;
 }
 
 body > header img {
     width: 3em;
 }
 
+body > article,
 body > section {
     border-bottom: 1px solid var(--color-dark);
     border-image: linear-gradient(to left, rgba(0,0,0,0), var(--color-dark), var(--color-dark), rgba(0,0,0,0)) 1;
@@ -74,12 +78,15 @@ html {
     color: var(--font-color-dark);
 }
 
-body > header h1,
-body > header h1 a,
-body > header h1 a:hover {
-    color: var(--font-color-dark);
-    font-weight: 300;
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em {
+    font-weight: normal;
 }
+
+
 
 a {
     color: var(--link-color-mid);
@@ -91,175 +98,29 @@ a:hover {
     text-decoration: underline;
 }
 
-nav a {
-    font-weight: 700;
+body > header {
+    font-size: 1.5rem;
 }
 
-
-/* body {
-    margin: 0;
-    padding: 0;
+body > header .logo,
+body > header .logo a,
+body > header .logo a:hover {
+    color: var(--font-color-dark);
+    font-family: 'Aldrich', 'Courier New', Courier, monospace;
+    font-weight: 300;
 }
 
 body > header h1 {
-    display: flex;
-    align-items: flex-end;
-}
-
-body > header h1 a {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-body > header img {
-    height: 4rem;
-    margin-right: 1rem;
-}
-
-body > header,
-body > footer,
-body > section,
-body > nav {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 20pt 20pt 25pt;
-}
-
-body > header {
-    background: rgba(20,10,0, 0.15);
-    box-shadow: 0 0 10pt rgba(20,10,0, .5);
-}
-
-.layout {
-    box-sizing: border-box;
-    border-color: rgba(20,10,0, 0.15);
-    border-width: 0 0 1pt;
-    border-style: solid;
-    border-image: linear-gradient(to left, rgba(0,0,0,0), black, black, rgba(0,0,0,0)) 1;
-    padding-bottom: 40pt;
-    overflow: auto;
-}
-
-.layout > .diagram {
-    background: white;
-    float: left;
-    width: 40%;
-    border: 1pt solid rgba(20,10,0, 0.15);
-    box-shadow: 0 0 20pt rgba(20,10,0, 0.15);
-    margin-bottom: 30pt;
-    margin-right: 30pt;
-}
-
-.layout:nth-child(even) > .diagram {
-    float: right;
-    margin-left: 30pt;
-    margin-right: 0;
-}
-
-h4 {
+    font-size: 1.5rem;
     margin: 0;
 }
 
-h4 + ul {
-    margin-top: 5pt;
+body > header p {
+    font-size: .8rem;
+    font-style: italic;
+    margin: 0;
 }
 
-@media screen and (min-width: 1200px) {
-    body {
-        display: flex;
-        flex-wrap: wrap;;
-    }
-    
-    .layout {
-        width: 50%;
-    }
-
-    .layout > .diagram {
-        float: right;
-        margin-left: 30pt;
-        margin-right: 0;
-    }
-    
-    .layout:nth-child(even) > .diagram {
-        float: left;
-        margin-right: 30pt;
-        margin-left: 0;
-    }
-
-    .module-list {
-        width: 30%;
-    }
-
-    .intro {
-        width: 70%;
-    }
+nav a {
+    font-weight: 700;
 }
-
-
-
-body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 12pt;
-}
-
-body > header a,
-body > header a:active,
-body > header a:visited,
-body > header a:hover {
-    color: inherit;
-}
-
-body > footer {
-    text-align: center;
-}
-
-a,
-a:active,
-a:visited,
-a:hover {
-    color: rgb(194, 30, 8);
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.module-list ul {
-    font-size: 1.5em;
-    list-style: none;
-    padding-inline-start: 0;
-}
-
-@media print {
-	body {
-		font-size: 14pt;
-	}
-
-    body > header,
-    body > footer {
-        display: none;
-        background: none;
-        box-shadow: none;
-        border-color: rgba(20,10,0, 0.25);
-        border-width: 0 0 1pt;
-        border-style: solid;
-        border-image: linear-gradient(to left, rgba(0,0,0,0), black, black, rgba(0,0,0,0)) 1;
-    }
-
-    .layout {
-        page-break-inside: avoid;
-        border: none;
-    }
-
-    .layout > .diagram {
-        float: right;
-        margin-left: 30pt;
-        margin-right: 0;
-    }
-    
-} */

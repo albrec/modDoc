@@ -10,9 +10,6 @@
     <meta name="description" content="{{ desc }}">
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" href="../modDoc.css">
     {% if styles %}
         <link rel="stylesheet" href="{{ styles }}">
@@ -20,14 +17,11 @@
 </head>
 <body class="monsoon">
     <header>
-        <h1>
-            <a href="/">
-                <img src="../images/modDoc-logo.svg" />
-                modDoc
-            </a> 
-            {% if title %}&nbsp;|&nbsp; {{ title }}{% endif %}
-        </h1>
-        <p>{{ desc }}</p>
+        <a class="logo" href="/">&lt;modDoc&gt;</a> 
+        <div>
+            <h1>{{ title }}</h1>
+            <p>{{ desc }}</p>
+        </div>
     </header>
     
 

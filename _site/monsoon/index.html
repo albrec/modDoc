@@ -18,229 +18,216 @@ gtag('config', 'G-5JDXH76T5F');
     <meta name="description" content="This document describes and illustrates the functions and features of the Monsoon derivative of Clouds by Mutable Instruments with the Parasites firmware.">
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" href="../modDoc.css">
     
 </head>
 <body class="monsoon">
     <header>
-        <h1>
-            <a href="/">
-                <img src="../images/modDoc-logo.svg" />
-                modDoc
-            </a> 
-            &nbsp;|&nbsp; Monsoon
-        </h1>
-        <p>This document describes and illustrates the functions and features of the Monsoon derivative of Clouds by Mutable Instruments with the Parasites firmware.</p>
+        <a class="logo" href="/">&lt;modDoc&gt;</a> 
+        <div>
+            <h1>Monsoon</h1>
+            <p>This document describes and illustrates the functions and features of the Monsoon derivative of Clouds by Mutable Instruments with the Parasites firmware.</p>
+        </div>
     </header>
     
 
     
-    <section class="layout">
-        <img class="diagram" src="images/monsoon-clouds.svg" />
+<section class="layout">
+    <img class="diagram" src="images/monsoon-clouds.svg" />
 
-        <h2>Clouds</h2>
+    <h2>Clouds</h2>
 
-        <div>
-            <p>This is the default "Granular Cloud/Texture Synthesizer mode.</p>
-            
-            <p><strong>Pitch (PITCH)</strong> | Shifts the pitch of the grains.</p>
-
-            <h4>Sliders</h4>
-            <ul>
-                <li><strong>Position (POS)</strong> | Position in the buffer where grains are selected. </li>
-                <li><strong>Density (DENS)</strong> | Number of grains sown. Up is random, down is constant rate.</li>
-                <li><strong>Size (SIZE)</strong> | Size of grains played.</li>
-                <li><strong>Texture (TEXT)</strong> | Envelope shape of grain.</li>
-            </ul>
-
-            <h4>Knobs</h4>
-            <ul>
-                <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
-                <li><strong>Pan (PAN)</strong> | Amount of random panning applied to grains.</li>
-                <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
-                <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
-            </ul>
-
-            <p><strong>Trigger (TRIG)</strong> | Sows a single grain.</p>
-
-            <p><strong>Freeze (FREEZE)</strong> | Stops recording incoming audio into the buffer.</p>
-        </div>
-    </section>
-
-
-    <section class="layout">
-        <img class="diagram" src="images/monsoon-pitch-shifter.svg" />
-
-        <h2>Pitch/Time Shifter</h2>
+    <div>
+        <p>This is the default "Granular Cloud/Texture Synthesizer mode.</p>
         
-        <div class="desc">
-            <p>Very similar to normal (Granular Cloud) mode, but overlaps two grains, synchronized to the signal to create smoother pitch and time stretching.</p>
-            
-            <p><strong>Pitch (PITCH)</strong> | Shifts the pitch of the grains.</p>
+        <p><strong>Pitch (PITCH)</strong> | Shifts the pitch of the grains.</p>
 
-            <h4>Sliders</h4>
-            <ul>
-                <li><strong>Position (POS)</strong> | Position in the buffer where grains are selected. </li>
-                <li><strong>Diffusion (DIFF)</strong> | Creates a granular diffusion based on all-pass filters.</li>
-                <li><strong>Size (SIZE)</strong> | Controls the size of the overlap between grains.</li>
-                <li><strong>Low/High Pass Filter (LP/HP)</strong> | Down for low-pass, up for high-pass.</li>
-            </ul>
+        <h4>Sliders</h4>
+        <ul>
+            <li><strong>Position (POS)</strong> | Position in the buffer where grains are selected. </li>
+            <li><strong>Density (DENS)</strong> | Number of grains sown. Up is random, down is constant rate.</li>
+            <li><strong>Size (SIZE)</strong> | Size of grains played.</li>
+            <li><strong>Texture (TEXT)</strong> | Envelope shape of grain.</li>
+        </ul>
 
-            <h4>Knobs</h4>
-            <ul>
-                <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
-                <li><strong>Pan (PAN)</strong> | Amount of random panning applied to grains.</li>
-                <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
-                <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
-            </ul>
+        <h4>Knobs</h4>
+        <ul>
+            <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
+            <li><strong>Pan (PAN)</strong> | Amount of random panning applied to grains.</li>
+            <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
+            <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
+        </ul>
 
-            <p><strong>Sync (SYNC)</strong> | Synchronizes grains to external clock. Position turns into clock multiplier/divider.</p>
+        <p><strong>Trigger (TRIG)</strong> | Sows a single grain.</p>
 
-            <p><strong>Freeze (FREEZE)</strong> | Stops recording incoming audio into the buffer.</p>
-        </div>
-    </section>
+        <p><strong>Freeze (FREEZE)</strong> | Stops recording incoming audio into the buffer.</p>
+    </div>
+</section>
 
 
-    <section class="layout">
-        <img class="diagram" src="images/monsoon-looping-delay.svg" />
+<section class="layout">
+    <img class="diagram" src="images/monsoon-pitch-shifter.svg" />
 
-        <h2>Looping Delay</h2>
+    <h2>Pitch/Time Shifter</h2>
+    
+    <div class="desc">
+        <p>Very similar to normal (Granular Cloud) mode, but overlaps two grains, synchronized to the signal to create smoother pitch and time stretching.</p>
         
-        <div class="desc">
-            <p>Plays audio from buffer continuously, with no granularization.</p>
-            
-            <p><strong>Pitch (PITCH)</strong> | Shifts the pitch of audio buffer output.</p>
+        <p><strong>Pitch (PITCH)</strong> | Shifts the pitch of the grains.</p>
 
-            <h4>Sliders</h4>
-            <ul>
-                <li><strong>Time (TIME)</strong> | Delay time. When FREEZE is activated, control loop start point.</li>
-                <li><strong>Diffusion (DIFF)</strong> | Creates a granular diffusion based on all-pass filters. (only functions when FREEZE is active)</li>
-                <li><strong>Size (SIZE)</strong> | Controls the size of the overlapping windows for pitch-shifting. Controls loop duration when FREEZE is active.</li>
-                <li><strong>Low/High Pass Filter (LP/HP)</strong> | Down for low-pass, up for high-pass.</li>
-            </ul>
+        <h4>Sliders</h4>
+        <ul>
+            <li><strong>Position (POS)</strong> | Position in the buffer where grains are selected. </li>
+            <li><strong>Diffusion (DIFF)</strong> | Creates a granular diffusion based on all-pass filters.</li>
+            <li><strong>Size (SIZE)</strong> | Controls the size of the overlap between grains.</li>
+            <li><strong>Low/High Pass Filter (LP/HP)</strong> | Down for low-pass, up for high-pass.</li>
+        </ul>
 
-            <h4>Knobs</h4>
-            <ul>
-                <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
-                <li><strong>Pan (PAN)</strong> | Amount of panning applied to audio buffer output. Fully clockwise creates ping-pong effect.</li>
-                <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
-                <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
-            </ul>
+        <h4>Knobs</h4>
+        <ul>
+            <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
+            <li><strong>Pan (PAN)</strong> | Amount of random panning applied to grains.</li>
+            <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
+            <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
+        </ul>
 
-            <p><strong>Sync (SYNC)</strong> | Synchronizes grains to external clock. Position turns into clock multiplier/divider.</p>
+        <p><strong>Sync (SYNC)</strong> | Synchronizes grains to external clock. Position turns into clock multiplier/divider.</p>
 
-            <p><strong>Freeze (FREEZE)</strong> | Stops recording incoming audio into the buffer.</p>
-        </div>
-    </section>
+        <p><strong>Freeze (FREEZE)</strong> | Stops recording incoming audio into the buffer.</p>
+    </div>
+</section>
 
 
-    <section class="layout">
-        <img class="diagram" src="images/monsoon-spectral-madness.svg" />
+<section class="layout">
+    <img class="diagram" src="images/monsoon-looping-delay.svg" />
 
-        <h2>Spectral Madness</h2>
+    <h2>Looping Delay</h2>
+    
+    <div class="desc">
+        <p>Plays audio from buffer continuously, with no granularization.</p>
         
-        <div class="desc">
-            <p>In this mode, the incoming signal is converted into "frames" of spectral data, that are stored, transformed, and re-synthesized as a time-domain signal. <br /><em>You know, wavetable-ish, FFT madness....</em></p>
-            
-            <p><strong>Pitch (PITCH)</strong> | Controls transposition (pitch-shifting)</p>
+        <p><strong>Pitch (PITCH)</strong> | Shifts the pitch of audio buffer output.</p>
 
-            <h4>Sliders</h4>
-            <ul>
-                <li><strong>Buffer (BUFF)</strong> | Selects the buffer into which audio is poured , or from which buffer the audio is synthesized depending on state of FREEZE.</li>
-                <li><strong>Smear (SMEAR)</strong> | Manipulates the FFT bin updating, causing various "smearing" effects.</li>
-                <li><strong>Warp (WARP)</strong> | Changes the coefficients of a polynomial.... bla bla bla.... It warps things based on frequency madness.</li>
-                <li><strong>Quantize (QUATZ)</strong> | Quantizes the amplitudes of the spectral components. Makes things rougher or smoother. ....ish....</li>
-            </ul>
+        <h4>Sliders</h4>
+        <ul>
+            <li><strong>Time (TIME)</strong> | Delay time. When FREEZE is activated, control loop start point.</li>
+            <li><strong>Diffusion (DIFF)</strong> | Creates a granular diffusion based on all-pass filters. (only functions when FREEZE is active)</li>
+            <li><strong>Size (SIZE)</strong> | Controls the size of the overlapping windows for pitch-shifting. Controls loop duration when FREEZE is active.</li>
+            <li><strong>Low/High Pass Filter (LP/HP)</strong> | Down for low-pass, up for high-pass.</li>
+        </ul>
 
-            <h4>Knobs</h4>
-            <ul>
-                <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
-                <li><strong>Pan (PAN)</strong> | Pans stuff. Makes more wide.</li>
-                <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
-                <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
-            </ul>
+        <h4>Knobs</h4>
+        <ul>
+            <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
+            <li><strong>Pan (PAN)</strong> | Amount of panning applied to audio buffer output. Fully clockwise creates ping-pong effect.</li>
+            <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
+            <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
+        </ul>
 
-            <p><strong>Glitch (GLITCH)</strong> | Corrupts stuff, make more glitç&micro;&yacute;....</p>
+        <p><strong>Sync (SYNC)</strong> | Synchronizes grains to external clock. Position turns into clock multiplier/divider.</p>
 
-            <p><strong>Freeze (FREEZE)</strong> | Switches from recording into the selected buffer, to playing from selected buffer.</p>
-        </div>
-    </section>
+        <p><strong>Freeze (FREEZE)</strong> | Stops recording incoming audio into the buffer.</p>
+    </div>
+</section>
 
 
-    <section class="layout">
-        <img class="diagram" src="images/monsoon-oliverb.svg" />
+<section class="layout">
+    <img class="diagram" src="images/monsoon-spectral-madness.svg" />
 
-        <h2>Oliverb</h2>
+    <h2>Spectral Madness</h2>
+    
+    <div class="desc">
+        <p>In this mode, the incoming signal is converted into "frames" of spectral data, that are stored, transformed, and re-synthesized as a time-domain signal. <br /><em>You know, wavetable-ish, FFT madness....</em></p>
         
-        <div class="desc">
-            <p>Full-featured, creative reverb mode based on the reverb contained within the stock firmware.</p>
-            
-            <p><strong>Pitch (PITCH)</strong> | Controls pitch-shifting applied to sound fed back into the reverb. (Shimmer)</p>
+        <p><strong>Pitch (PITCH)</strong> | Controls transposition (pitch-shifting)</p>
 
-            <h4>Sliders</h4>
-            <ul>
-                <li><strong>Pre Delay (PRE DELAY)</strong> | Pre delay before reverb signal is applied. Functions as a clock divider/multiplier if clock via SYNC.</li>
-                <li><strong>Decay Length (DECAY)</strong> | Controls the decay length of the reverb tail. Can create self-oscillation at high levels.</li>
-                <li><strong>Size (SIZE)</strong> | Controls the size of the emulated room.</li>
-                <li><strong>Dampening (DAMP)</strong> | Dampens reverb tail by applying a LP/HP filter.</li>
-            </ul>
+        <h4>Sliders</h4>
+        <ul>
+            <li><strong>Buffer (BUFF)</strong> | Selects the buffer into which audio is poured , or from which buffer the audio is synthesized depending on state of FREEZE.</li>
+            <li><strong>Smear (SMEAR)</strong> | Manipulates the FFT bin updating, causing various "smearing" effects.</li>
+            <li><strong>Warp (WARP)</strong> | Changes the coefficients of a polynomial.... bla bla bla.... It warps things based on frequency madness.</li>
+            <li><strong>Quantize (QUATZ)</strong> | Quantizes the amplitudes of the spectral components. Makes things rougher or smoother. ....ish....</li>
+        </ul>
 
-            <h4>Knobs</h4>
-            <ul>
-                <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
-                <li><strong>Diffusion (DIFF)</strong> | Controls how smooth the reverb tail is, from smooth and continuous, to defined repeats.</li>
-                <li><strong>Mod Speed (MOD SPD)</strong> | Controls the speed of the random LFO.</li>
-                <li><strong>Mod Amount (MOD AMT)</strong> | Controls the amount of random LFO applied to the reverb.</li>
-            </ul>
+        <h4>Knobs</h4>
+        <ul>
+            <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
+            <li><strong>Pan (PAN)</strong> | Pans stuff. Makes more wide.</li>
+            <li><strong>Feedback (FBK)</strong> | Amount of output signal fed back into input buffer.</li>
+            <li><strong>Reverb (RVB)</strong> | Amount of reverb applied to overall output (including dry signal).</li>
+        </ul>
 
-            <p><strong>Sync (SYNC)</strong> | Clock signal that synchronizes pre delay to external clock.</p>
+        <p><strong>Glitch (GLITCH)</strong> | Corrupts stuff, make more glitç&micro;&yacute;....</p>
 
-            <p><strong>Freeze (FREEZE)</strong> | Turns on infinite reverb.</p>
-        </div>
-    </section>
+        <p><strong>Freeze (FREEZE)</strong> | Switches from recording into the selected buffer, to playing from selected buffer.</p>
+    </div>
+</section>
 
 
-    <section class="layout">
-        <img class="diagram" src="images/monsoon-resonestor.svg" />
+<section class="layout">
+    <img class="diagram" src="images/monsoon-oliverb.svg" />
 
-        <h2>Resonestor</h2>
+    <h2>Oliverb</h2>
+    
+    <div class="desc">
+        <p>Full-featured, creative reverb mode based on the reverb contained within the stock firmware.</p>
         
-        <div class="desc">
-            <p>Dual-voice, four-part resonator effect with built-in capability for polyphonic Karplus-Strong plucked string synthesis, and more.</p>
-            
-            <p><strong>Pitch (PITCH)</strong> | Sets pitch of resonator.</p>
+        <p><strong>Pitch (PITCH)</strong> | Controls pitch-shifting applied to sound fed back into the reverb. (Shimmer)</p>
 
-            <h4>Sliders</h4>
-            <ul>
-                <li><strong>Source (SRC)</strong> | Controls the timbre and duration of the noise burst. <em>Mutes at both extremes.</em></li>
-                <li><strong>Decay Length (DECAY)</strong> | Controls the decay length of the current voice. Above ¾ mark, decay is infinite and can be used as a traditional oscillator.</li>
-                <li><strong>Chord (CHORD)</strong> | Selects the chord for the current voice.</li>
-                <li><strong>Dampening (DAMP)</strong> | Dampens the feedback loop of the resonator. Down is LP filter, up is BP filter with increasing resonance.</li>
-            </ul>
+        <h4>Sliders</h4>
+        <ul>
+            <li><strong>Pre Delay (PRE DELAY)</strong> | Pre delay before reverb signal is applied. Functions as a clock divider/multiplier if clock via SYNC.</li>
+            <li><strong>Decay Length (DECAY)</strong> | Controls the decay length of the reverb tail. Can create self-oscillation at high levels.</li>
+            <li><strong>Size (SIZE)</strong> | Controls the size of the emulated room.</li>
+            <li><strong>Dampening (DAMP)</strong> | Dampens reverb tail by applying a LP/HP filter.</li>
+        </ul>
 
-            <h4>Knobs</h4>
-            <ul>
-                <li><strong>Dist (DIST)</strong> | Distortion using filtered noise to modulate the comb filters. No effect at either extremes.</li>
-                <li><strong>Pan (PAN)</strong> | Pans voices between the outputs. 12 o'clock is centered, either direction causes stereo widening.</li>
-                <li><strong>Harmonics (HARM)</strong> | Controls the harmonics that are applied to the signal.</li>
-                <li><strong>Scatter (SCAT)</strong> | Random delay applied to signal before hitting the resonator of the current voice. Can create Karplus-Strong type effects.</li>
-            </ul>
+        <h4>Knobs</h4>
+        <ul>
+            <li><strong>Wet/Dry (WET)</strong> | Mix of wet and dry signals. Goes from 100% dry to 100% wet.</li>
+            <li><strong>Diffusion (DIFF)</strong> | Controls how smooth the reverb tail is, from smooth and continuous, to defined repeats.</li>
+            <li><strong>Mod Speed (MOD SPD)</strong> | Controls the speed of the random LFO.</li>
+            <li><strong>Mod Amount (MOD AMT)</strong> | Controls the amount of random LFO applied to the reverb.</li>
+        </ul>
 
-            <p><strong>Trigger (TRIG)</strong> | Switches the current voice.</p>
+        <p><strong>Sync (SYNC)</strong> | Clock signal that synchronizes pre delay to external clock.</p>
 
-            <p><strong>Freeze (FREEZE)</strong> | Switches to the next voice and prevents further voice switching from the TRIG input.</p>
-        </div>
-    </section>
+        <p><strong>Freeze (FREEZE)</strong> | Turns on infinite reverb.</p>
+    </div>
+</section>
 
 
-    <footer>
-        <p>David Souza | <a href="https://github.com/albrec/modDoc">Github</a></p>
-    </footer>
-</body>
-</html>
+<section class="layout">
+    <img class="diagram" src="images/monsoon-resonestor.svg" />
+
+    <h2>Resonestor</h2>
+    
+    <div class="desc">
+        <p>Dual-voice, four-part resonator effect with built-in capability for polyphonic Karplus-Strong plucked string synthesis, and more.</p>
+        
+        <p><strong>Pitch (PITCH)</strong> | Sets pitch of resonator.</p>
+
+        <h4>Sliders</h4>
+        <ul>
+            <li><strong>Source (SRC)</strong> | Controls the timbre and duration of the noise burst. <em>Mutes at both extremes.</em></li>
+            <li><strong>Decay Length (DECAY)</strong> | Controls the decay length of the current voice. Above ¾ mark, decay is infinite and can be used as a traditional oscillator.</li>
+            <li><strong>Chord (CHORD)</strong> | Selects the chord for the current voice.</li>
+            <li><strong>Dampening (DAMP)</strong> | Dampens the feedback loop of the resonator. Down is LP filter, up is BP filter with increasing resonance.</li>
+        </ul>
+
+        <h4>Knobs</h4>
+        <ul>
+            <li><strong>Dist (DIST)</strong> | Distortion using filtered noise to modulate the comb filters. No effect at either extremes.</li>
+            <li><strong>Pan (PAN)</strong> | Pans voices between the outputs. 12 o'clock is centered, either direction causes stereo widening.</li>
+            <li><strong>Harmonics (HARM)</strong> | Controls the harmonics that are applied to the signal.</li>
+            <li><strong>Scatter (SCAT)</strong> | Random delay applied to signal before hitting the resonator of the current voice. Can create Karplus-Strong type effects.</li>
+        </ul>
+
+        <p><strong>Trigger (TRIG)</strong> | Switches the current voice.</p>
+
+        <p><strong>Freeze (FREEZE)</strong> | Switches to the next voice and prevents further voice switching from the TRIG input.</p>
+    </div>
+</section>
 
     <footer>
         <p>David Souza | <a href="https://github.com/albrec/modDoc">Github</a></p>
