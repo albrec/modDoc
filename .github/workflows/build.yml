@@ -15,14 +15,15 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
-      - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      - name: FTP Deployer
+        uses: sand4rt/ftp-deployer@v1.3
         with:
-          server: moddoc.net
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
-          protocol: ftps
-          port: 22
-          local-dir: ./_site/
-          server-dir: moddoc.net/
-          dry-run: true
+          sftp: true # optional
+          host: moddoc.net # e.g. ftp.host.com or sftp.host.com (without ftp:// or ftps://)
+          port: 22 # optional, default is: 21
+          username: ${{ secrets.FTP_USER }} # FTP username
+          password: ${{ secrets.FTP_PASSWORD }} # FTP password
+          remote_folder: moddoc.net/ # optional, remote path of your FTP server
+          local_folder: _site # optional, local path, default is: dist
+          exclude: ['node_modules/**', '.git/**', '*.env']
+          pasive: true # optional
