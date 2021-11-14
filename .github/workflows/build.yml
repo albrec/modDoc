@@ -25,5 +25,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }} # FTP password
           remote_folder: moddoc.net/ # optional, remote path of your FTP server
           local_folder: _site # optional, local path, default is: dist
-          exclude: ["node_modules/**", ".git/**", "*.env"]
+          exclude: "[node_modules/**, .git/**, *.env]"
           pasive: true # optional
