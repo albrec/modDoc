@@ -6,7 +6,7 @@ Documentation for modules, because understanding how your modules work, and what
 Well, Eurorack and modular synthesis is super fun..... but, it's also very complex at times. Some of the most interesting, engaging and versatile modules available are also some of the most opaque with their interfaces. Not to say that these interfaces are intrinsically bad, many are very good, but learning them takes time, and with the number of individual modules/interfaces in front of you when you sit down at a typical modular synth, it can be overwhelming. `modDoc` is intended to help me, and maybe you, keep track of how my modules work and what they can do.
 
 ## What
-This site is built and generated with **Eleventy**[https://www.11ty.dev/].
+This site is built and generated with **[Eleventy](https://www.11ty.dev/)**.
 
 Eleventy is a easy to use, though quite flexible, Static Site Generator (SSG), which seemed like the right balance of accessible, simple and powerful. I work on complex IT and Web systems as my day job, I didn't want to do that on my off time, nor did I want to add part time operations and finance jobs to my work load, so an SSG seemed like the right solution. And the most important part was that I wanted the most effective tool that would get me to my end goal, a working documentation site, as quickly as possible, while still being able to manage and scale over time. It's hard to completely ignore my inner engineer 🤪
 
