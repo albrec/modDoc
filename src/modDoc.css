@@ -118,6 +118,7 @@ h5 em {
 a {
     color: var(--link-color-mid);
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {

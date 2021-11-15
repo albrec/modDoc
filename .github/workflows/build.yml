@@ -26,4 +26,5 @@ jobs:
           remote_folder: moddoc.net/ # optional, remote path of your FTP server
           local_folder: _site # optional, local path, default is: dist
           exclude: '["node_modules/**", ".git/**", "*.env"]'
+          cleanup: true
           pasive: true # optional
