@@ -156,3 +156,24 @@ body > header p {
 nav a {
     font-weight: 700;
 }
+
+@media only print {
+    :root {
+        font-size: 18px;
+    }
+    
+    body > header,
+    body > nav,
+    body > footer {
+        display: none;
+    }
+
+    body > header,
+    body > footer,
+    body > article,
+    body > section,
+    body > nav {
+        padding: 0;
+        border: 0;
+    }
+}

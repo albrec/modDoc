@@ -94,3 +94,44 @@ small {
     }
 
 }
+
+@media only print {
+    .scales section {
+        page-break-after: always;
+        margin: 0;
+        border: 0;
+    }
+
+    .scales h2 {
+        margin: 0 0 .5em;
+    }
+
+    .scales small {
+        margin-bottom: 1em;
+    }
+
+    .scales section h3 {
+        margin-top: 0;
+    }
+
+    .scale-group {
+        font-size: .9em;
+        margin: 0;
+    }
+
+    .scale-group > li {
+        width: calc(100% / 3);
+    }
+
+    .scale-group ol {
+        margin-bottom: 1rem;
+    }
+
+    .scale-group ol > li {
+        margin-bottom: .5em;
+    }
+
+    .scale-group .color {
+        -webkit-print-color-adjust: exact !important;
+    }
+}

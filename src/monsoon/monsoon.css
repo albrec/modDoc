@@ -43,3 +43,21 @@
         margin: 2rem 0;
     }
 }
+
+@media only print {
+    .modes {
+        display: block;
+    }
+
+    .mode {
+        width: auto;
+        padding: 1em 0;
+        overflow: visible;
+        page-break-inside: avoid;
+    }
+
+    .mode figure {
+        border: 1px solid var(--shadow-color);
+        box-shadow: 0 0 15px var(--shadow-color);
+    }
+}
