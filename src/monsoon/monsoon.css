@@ -60,4 +60,8 @@
         border: 1px solid var(--shadow-color);
         box-shadow: 0 0 15px var(--shadow-color);
     }
+
+    .mode li {
+        flex-direction: column;
+    }
 }
