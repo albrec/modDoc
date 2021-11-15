@@ -13,7 +13,7 @@ Eleventy is a easy to use, though quite flexible, Static Site Generator (SSG), w
 ## Contribution
 I don't have many modules. In the grand scheme of the Eurorack ecosystem, no one really does. 
 
-*Except Divkid... that guy has everything. Hey Ben* 😉
+**Except Divkid... that guy has everything. Hey Ben** 😉
 
 If `modDoc` is only the documentation that I come up with for my own modules, that's good enough for me. That said, it seems like this is something that would benefit a lot of Eurorack users, ***if*** there is enough documentation to make it worthwhile. 
 
