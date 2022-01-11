@@ -1,4 +1,8 @@
 <nav class="library">
     <h2>Library</h2>
     {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({ showExcerpt: true }) | safe }}
+    <h2>Tools</h2>
+    <ul>
+        <li><a href="/matrix">Studio Manager</a>: Tool for documented complex studio interconnections.</li>
+    </ul>
 </nav>
