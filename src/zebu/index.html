@@ -1,0 +1,71 @@
+---
+layout: base
+title: Zoia Euroburo
+desc: Zoia.... for Eurorack
+
+eleventyNavigation:
+    key: zoia
+    title: Zoia Euroburo
+---
+
+<article class="patches">
+    {% for patch in patches %}
+        <div>
+            <h3><strong>{{ patch.num }}</strong> {{ patch.name }}</h3>
+            <h5>Author: {{ patch.author }}</h5>
+            <h4>{{ patch.shortDesc }}</h4>
+            <div class="{{ patch.type | slug }}">{{ patch.type }}</div>
+            <p><strong>Description:</strong> {{ patch.longDesc }}</p>
+            <p><strong>Controls:</strong> {{ patch.controls }}</p>
+            <fieldset>
+                <legend>Buttons</legend>
+                <ol class="buttons">
+                    <li>{{ patch.btn1 }}</li>
+                    <li>{{ patch.btn2 }}</li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <legend>CV In</legend>
+                <ol class="cv-in">
+                    <li>{{ patch.cvIn1 }}</li>
+                    <li>{{ patch.cvIn2 }}</li>
+                    <li>{{ patch.cvIn3 }}</li>
+                    <li>{{ patch.cvIn4 }}</li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <legend>CV Out</legend>
+                <ol class="cv-out">
+                    <li>{{ patch.cvOut1 }}</li>
+                    <li>{{ patch.cvOut2 }}</li>
+                    <li>{{ patch.cvOut3 }}</li>
+                    <li>{{ patch.cvOut4 }}</li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <legend>Midi</legend>
+                <div>{{ patch.midi }}</div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Audio In</legend>
+                <ol class="audio-in">
+                    <li>{{ patch.audioIn1 }}</li>
+                    <li>{{ patch.audioIn2 }}</li>
+                </ol>
+            </fieldset>
+
+            <fieldset>
+                <legend>Audio In</legend>
+                <ol class="audio-in">
+                    <li>{{ patch.audioOut1 }}</li>
+                    <li>{{ patch.audioOut2 }}</li>
+                </ol>
+            </fieldset>
+            
+        </div>      
+    {% endfor %}
+</article>
