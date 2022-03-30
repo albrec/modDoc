@@ -17,7 +17,7 @@ eleventyNavigation:
     {% for patch in patches %}
         <div class="patch">
             <section class="summary">
-                <div class="author"><em>Author</em>: {{ patch.author }}</div>
+                <div class="author"><em>Author:</em> {{ patch.author }}</div>
                 <h3><em>#{{ patch.num }}</em> {{ patch.name }}</h3>
                 <p class="shortDesc">{{ patch.shortDesc }}</p>
                 <div class="type {{ patch.type | slug }}">{{ patch.type }}</div>

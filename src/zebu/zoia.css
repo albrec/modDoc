@@ -14,20 +14,15 @@
 }
 
 .summary {
+    position: relative;
+    margin-top: 2rem;
 }
 
-.summary > * {
-}
-
-.summary > div:last-child {
-    text-align: right;
-}
-
-h2 {
+h3 {
     margin-bottom: 0;
 }
 
-h2 > em {
+h3 > em {
     font-weight: normal;
 }
 
@@ -37,11 +32,15 @@ h2 > em {
     float: right;
 }
 
-.author > em,
-.desc > em,
-.controls > em {
+.author > em {
     color: var(--font-color-mid);
     font-size: .8rem;
+}
+
+.desc > em,
+.controls > em {
+    color: var(--font-color-dark);
+    font-weight: bold;
     float: left;
     margin-right: .5rem;
 }
@@ -54,10 +53,13 @@ h2 > em {
 
 .type {
     display: inline-block;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
     font-size: .6rem;
     font-weight: bold;
-    border: 1px solid var(--color-mid);
-    padding: .2rem;
+    padding: .2rem .8rem;
+    box-shadow: 1px 1px 2px var(--shadow-color);
 }
 
 .type.sound-source {
@@ -96,4 +98,12 @@ h2 > em {
     padding: 0 0 0 1rem;
     margin: 0;
     font-size: .8rem;
+}
+
+.interfaces ol li {
+    margin-bottom: .5rem;
+}
+
+.interfaces ol li:last-child {
+    margin-bottom: 0;
 }
