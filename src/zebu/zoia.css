@@ -1,0 +1,99 @@
+.page-nav {
+    display: none;
+}
+
+.patches {
+    display: flex;
+    flex-wrap: wrap;
+}
+.patches > .patch {
+    flex: 1 1 20rem;
+    margin: 2rem 1rem;
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-dark);
+}
+
+.summary {
+}
+
+.summary > * {
+}
+
+.summary > div:last-child {
+    text-align: right;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h2 > em {
+    font-weight: normal;
+}
+
+.author {
+    font-size: 1rem;
+    font-weight: normal;
+    float: right;
+}
+
+.author > em,
+.desc > em,
+.controls > em {
+    color: var(--font-color-mid);
+    font-size: .8rem;
+    float: left;
+    margin-right: .5rem;
+}
+
+.shortDesc {
+    color: var(--font-color-mid);
+    margin-top: 0;
+    font-style: italic;
+}
+
+.type {
+    display: inline-block;
+    font-size: .6rem;
+    font-weight: bold;
+    border: 1px solid var(--color-mid);
+    padding: .2rem;
+}
+
+.type.sound-source {
+    background-color: rgb(0, 141, 92);
+    color: var(--color-light);
+}
+
+.type.effect {
+    background-color: rgb(201, 154, 0);
+    color: var(--color-light);
+}
+
+.type.utility {
+    background-color: rgb(32, 26, 0);
+    color: var(--color-light);
+}
+
+.interfaces {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interfaces > .interface {
+    flex: 1 1 40%;
+    margin: .5rem .5rem 1rem;
+    padding: .5rem;
+}
+
+.interfaces > .interface > div:first-child {
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-dark);
+    margin-bottom: .75rem;
+}
+
+.interfaces ol {
+    padding: 0 0 0 1rem;
+    margin: 0;
+    font-size: .8rem;
+}

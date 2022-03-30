@@ -6,6 +6,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/**/*.css")
     eleventyConfig.addPassthroughCopy("src/**/*.svg")
 
+    eleventyConfig.addFilter('markdown', content => {
+        let markdown = require('markdown-it')({
+            html: true
+        });
+        return markdown.render(content);
+    })
+
     return {
         dir: {
             input: 'src',

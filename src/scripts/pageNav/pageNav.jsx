@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function PageNav () {
     const markers = getMarkers()
-    console.log(markers)
+    console.log('Markers: ', markers)
 
     return (
         <ul>
@@ -29,7 +29,6 @@ function getMarkers (root = document.body) {
         header: el.querySelector('h1,h2,h3,h4,h5'),
         parentCount: getParentCount(el)
     })).filter(marker => !!marker.header)
-    
 }
 
 function getParentCount (el, count = 0) {
